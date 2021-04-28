@@ -3,6 +3,7 @@
 {% block content %}
     {%  for blog in blogs %}
     <h2>{{ blog.title }}</h2>
-
+        <img src="{{ blog.img.url }}" alt="">
+        {{ blog.text }}
     {% endfor %}
 {% endblock %}
