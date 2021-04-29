@@ -13,9 +13,44 @@
 </head>
 <body>
 <header>
-    <a href="{% url 'home' %}">Main</a>
-    <a href="{% url 'list_blog' %}">Blogs</a>
-
+    <div class="header-menu">
+        <a href="{% url 'home' %}">Контакты</a>
+    <a href="{% url 'list_blog' %}">Отзывы</a>
+        <a href="{% url 'home' %}">Акции</a>
+    <a href="{% url 'list_blog' %}">Блог</a>
+    </div>
+    <div class="header-logo">
+        <a href=""><img src="media/img/logotype_1.png" alt=""></a>
+    </div>
+    <div class="header-other">
+        <div class="header-other-contact"><a href="">+7 (727) 349 66 00</a>
+            <a href="">+7 (700) 349 66 00</a>
+        </div>
+        <div class="header-other-basket">
+           <svg xmlns="http://www.w3.org/2000/svg" width="34" viewBox="0 0 45.551 40">
+                    <g id="shopping-cart" data-name="shopping-cart" transform="translate(0 -2.008)">
+                      <g id="Group_2201" data-name="Group 2201" transform="translate(0 2.008)">
+                        <path id="Path_9340" data-name="Path 9340" d="M44.25,31.447H16.788a1.3,1.3,0,0,1-1.126-.653L.177,3.977a1.315,1.315,0,0,1,.47-1.79,1.3,1.3,0,0,1,1.78.475L17.538,28.827H44.25a1.31,1.31,0,0,1,0,2.62Z" transform="translate(0 -2.008)" fill="#e31e24"></path>
+                      </g>
+                      <g id="Group_2202" data-name="Group 2202" transform="translate(18.447 33.354)">
+                        <path id="Path_9341" data-name="Path 9341" d="M17.609,33.213a4.327,4.327,0,1,1,4.327-4.327A4.332,4.332,0,0,1,17.609,33.213Zm0-6.1a1.773,1.773,0,1,0,1.773,1.773A1.775,1.775,0,0,0,17.609,27.113Z" transform="translate(-13.282 -24.559)" fill="#e31e24"></path>
+                      </g>
+                      <g id="Group_2203" data-name="Group 2203" transform="translate(36.395 33.354)">
+                        <path id="Path_9342" data-name="Path 9342" d="M30.523,33.213a4.327,4.327,0,1,1,4.328-4.327A4.332,4.332,0,0,1,30.523,33.213Zm0-6.1A1.773,1.773,0,1,0,32.3,28.886,1.775,1.775,0,0,0,30.523,27.113Z" transform="translate(-26.196 -24.559)" fill="#e31e24"></path>
+                      </g>
+                      <g id="Group_2204" data-name="Group 2204" transform="translate(18.053 23.294)">
+                        <path id="Path_9343" data-name="Path 9343" d="M38.9,19.936H13.959a1.277,1.277,0,0,1,0-2.554H38.9a1.277,1.277,0,0,1,0,2.554Z" transform="translate(-12.682 -17.382)" fill="#e31e24"></path>
+                      </g>
+                      <g id="Group_2205" data-name="Group 2205" transform="translate(15.403 17.95)">
+                        <path id="Path_9344" data-name="Path 9344" d="M39.6,16.076H12.006a1.277,1.277,0,1,1,0-2.554H39.6a1.277,1.277,0,1,1,0,2.554Z" transform="translate(-10.729 -13.522)" fill="#e31e24"></path>
+                      </g>
+                      <g id="Group_2206" data-name="Group 2206" transform="translate(12.814 12.608)">
+                        <path id="Path_9345" data-name="Path 9345" d="M40.281,12.218H10.1a1.277,1.277,0,0,1,0-2.554H40.28a1.277,1.277,0,0,1,0,2.554Z" transform="translate(-8.822 -9.664)" fill="#e31e24"></path>
+                      </g>
+                    </g>
+                  </svg>
+        </div>
+    </div>
 </header>
 <div class="container">
         {% block content %}

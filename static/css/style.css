@@ -1,3 +1,36 @@
 body {
     color: red !important;
 }
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 16px;
+        font-weight: bold;
+    padding: 20px 60px;
+        align-items: center;
+}
+
+.header-other{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo a{
+    width: 100px;
+}
+
+.header-logo a img {
+max-width: 100px;
+}
+
+.header-menu a{
+    margin: 5px 10px;
+}
+
+.header-other-contact a{
+    margin: 0 15px;
+
+}
